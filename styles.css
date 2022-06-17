@@ -90,3 +90,32 @@ li {
     border: 0;
     border-radius: 5px;
 }
+
+.video-art{
+  margin-left: 30px;
+}
+.video-art h2{
+  color: #025157;
+  font-family: 'Raleway', sans-serif;
+}
+
+.video-art p{
+  color: #343434;
+}
+
+.promo{
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.vid1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vid1 img {
+  width: 120px;
+}
