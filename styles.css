@@ -1,10 +1,17 @@
+@media (max-width: 575px){
+  body{
+    background-color: aqua;
+  }
+} 
+
 body {
     background-color: #fffbf7;
 }
 
-h1 {
+.main h1 {
     color: #025157;
     text-align:center;
+    font-size: 60px;
     font-family: 'Pacifico', cursive;
 }
 
@@ -48,11 +55,11 @@ li {
 }
 
 .logo > img {
-  width: 15%;
+  width: 2rem;
 }
 
 .navbar {
-  width: 65%;
+  /*width: 65%;*/
   text-align: left;
   color: #025157;
   font-weight: 500;
@@ -99,6 +106,7 @@ li {
 }
 .video-art h2{
   color: #025157;
+  font-size: 40px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -158,6 +166,10 @@ li {
   color: #67b54b;
   font-weight: bold;
 
+}
+
+.navbar-brand > img{
+  max-height: 100% ;
 }
 
 .side-img{
@@ -230,3 +242,50 @@ li {
 .works-div1 h2{
   font-size: 4rem;
 }
+
+
+@media (max-width: 575px){
+
+  /* .navbar, .actions{
+    display: none;
+  } */
+
+ .main h1{
+    font-size: 30px;
+  }
+
+  .main{
+    margin-top: 90px;
+  }
+
+  .main .banner img{
+    width: 100%;
+  }
+
+  .video-art > form{
+    flex-direction: column;
+  }
+
+  .video-art > form > div{
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .promo{
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .vid1{
+    width: 100%;
+  }
+
+  .video-art h2{
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features{
+    grid-template: repeat(4,1fr) / 1fr;
+  }
+} 
