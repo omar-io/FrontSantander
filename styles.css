@@ -191,6 +191,10 @@ li {
   background-color: #fffbf7;
 }
 
+.texto-boton:hover{
+  background-color: #67b54b;
+}
+
 .how-matcha-works h2{
   color: #025157;
   text-align: center;

@@ -74,3 +74,50 @@
         }
     }
 }
+
+.trial-form{
+    background-color: $trial-light-green;
+    padding: 2rem;
+    margin: 10rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        @extend %base-title;
+        font-size: 4rem;
+    }
+    p{
+        color: $white;
+        text-align: center;
+    }
+
+    .mail-form{
+        margin: 1rem auto 1rem auto;
+        input{
+            width: 50%;
+        }
+    }
+
+}
+
+.trial-demo {
+    background-color: $dark-green-title;
+    padding: 3rem;
+    border-radius: 10px;
+    color: $white;
+
+
+    h2 {
+        @extend %base-title;
+        color: $white;
+    }
+
+    p {
+        font-size: 1.2rem;
+        a {
+            color: $light-green-link;
+        }
+    }
+
+
+}
