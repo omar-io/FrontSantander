@@ -21,6 +21,20 @@ body {
     font-size: 20px;
 }
 
+.main .main-title{
+  animation-name: main-title-animation;
+  animation-duration: 0.5s;
+  position: relative;
+  animation-timing-function: linear;
+}
+
+@keyframes main-title-animation {
+  0% {opacity: 0; top: -20px;}
+  50% {opacity: 0.3; top: -10px;}
+  100% {opacity: 1; top: 0;}
+  
+}
+
 button {
     color: #fff;
     background-color: #025157;
