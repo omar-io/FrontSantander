@@ -1,0 +1,88 @@
+@use 'global' as *;
+
+.navbar {
+    /*width: 65%;*/
+    text-align: left;
+    color: #025157;
+    font-weight: 500;
+  }
+
+  .about_main{
+    h1{
+        color: $dark-green-title;
+        text-align: center;
+        @extend %base-title;
+        font-size: 3rem;
+        
+    }
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+  }
+
+  .features-cards {
+
+    .card {
+        border-style: none;
+    }
+
+    .arrow {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto 0 auto;
+        .arrow-relative{
+            position: relative;
+            height: 200px;
+            .arrow-animated{
+                position: absolute;
+                animation-name: arrow-up-amimation, arrow-sides-animation;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 2s;
+                animation-direction: alternate;
+                img {
+                    transform: rotate(-90deg);
+                    width:  180px;
+                }
+            }
+        }
+    }
+
+    h5{
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 1.3rem;
+        font-family: 'Open Sans',sans-serif;
+        margin-bottom: 35px;
+        text-decoration: none;
+        text-shadow: #025157 1px 1px 2px;
+        transition: color .3s ease-in-out;
+        transition: font-size 1s;
+        &:hover {
+            color:#67b54b;
+            font-size: 1.5rem;
+          }
+    }
+
+    p {
+        text-align: center;
+    }
+  }
+
+@keyframes arrow-up-amimation {
+    0% {top: 0; opacity: 1;}
+    25% {top: -10px; opacity: 0.9;}
+    50% {top: -20px; opacity: 0.8;}
+    75% {top: -10px; opacity: 0.9;}
+    100%{top: 0; opacity: 1;}
+    
+}
+
+@keyframes arrow-sides-animation {
+    0%{left: -300px;}
+
+    100%{left: 300px;}
+    
+}
